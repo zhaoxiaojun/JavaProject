@@ -1,25 +1,31 @@
+import java.util.Scanner;
 /**
  * Created by Administrator on 2017/8/16.
  */
-public class chapter4_25 {
+public class chapter4_26 {
     public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        System.out.println("请输入年份：");
+        int year = in.nextInt();
+        System.out.println("请输入月份：");
+        int month = in.nextInt();
         int sum = 0;
-        for(int year=1900;year<=2011;year++){
-            if (year%4==0&&year%100!=0||year%400==0){
+        for(int i=1900;i<=year-1;year++){
+            if (i%4==0&&i%100!=0||i%400==0){
                 sum+=366;
             }else{
                 sum+=365;
             }
         }
-        for(int month=1;month<=8;month++){
+        for(int i=1;i<=month-1;month++){
             if(month==2){
-                if(2012%4==0&&2012%100!=0||2012%400==0){
+                if(year%4==0&&year%100!=0||year%400==0){
                     sum+=29;
                 }else{
                     sum+=28;
                 }
             }else{
-                if(month==4||month==6||month==9||month==11){
+                if(i==4||i==6||i==9||i==11){
                     sum+=30;
                 }else{
                     sum+=31;
