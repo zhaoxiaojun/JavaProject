@@ -20,6 +20,5 @@ public class chapter5_2 {
         for (int i=0;i<=arr1.length-1;i++){
             System.out.println(arr1[i]);
         }
-
     }
 }
