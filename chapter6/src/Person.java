@@ -6,9 +6,9 @@ public class Person {
     String gender;
     int age;
 
-    /**
+    /*
      * 无参无返回
-     */
+     **/
     public void eat() {
         System.out.println("我在吃饭");
     }
