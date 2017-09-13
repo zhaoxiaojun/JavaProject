@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Created by 17032361 on 2017/8/31.
  * 方法的重载
@@ -10,16 +12,22 @@ class student{
     }
 
     public void max(double a,double b){
-        System.out.println(a>b?a:b);
+        System.out.println("第二个方法:"+(a>b?a:b));
     }
 
     public void max(double a,double b,double c){
         double max = a>b?a:b;
-        System.out.println(max>c?max:c);
+        System.out.println("第三个方法:"+(max>c?max:c));
     }
 }
 public class chapter6_13 {
     public static void main(String[] args){
+        double[] arr = {43,5,54.5,32,123,3445};
+        Arrays.sort(arr);
+        for(int i=0;i<arr.length;i++){
+            System.out.println(arr[i]);
+        }
+
         student one = new student();
         one.max(7.4,9.5);
         one.max(7.4,9.5,9.76);
