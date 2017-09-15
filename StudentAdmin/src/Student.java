@@ -68,20 +68,20 @@ public class Student {
         this.sql = sql;
     }
 
-    public int getSum() {
+    public int getSum(int sum) {
         return sum;
     }
 
-    public void setSum(int sum) {
-        this.sum = sum;
+    public void setSum() {
+        this.sum = this.java+this.c_shar+this.html+this.sql;
     }
 
-    public int getAvg() {
+    public int getAvg(int avg) {
         return avg;
     }
 
-    public void setAvg(int avg) {
-        this.avg = avg;
+    public void setAvg() {
+        this.avg = this.sum/4;
     }
 
     public String toString(){
